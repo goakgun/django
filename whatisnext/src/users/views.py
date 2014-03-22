@@ -1,6 +1,3 @@
-#python first
-#django second
-#our apps
 from django.conf import settings
 from django.contrib import messages
 from django.contrib import auth
