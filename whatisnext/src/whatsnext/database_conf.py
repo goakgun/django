@@ -1,5 +1,5 @@
 #!/usr/bin/python
 
-database_user = ""
-database_password = ""
-database_host = ""
+database_user = "wn_user"
+database_password = "hede"
+database_host = "localhost"

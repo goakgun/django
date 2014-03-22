@@ -5,7 +5,6 @@ import os
 import database_conf as DATABASE_CONF
 
 BASE_DIR=os.path.dirname(os.path.dirname(__file__))
-
 DEFAULT_FROM_EMAIL = DEFAULT_FROM_EMAIL 
 SERVER_EMAIL = SERVER_EMAIL 
 EMAIL_USE_TLS = EMAIL_USE_TLS
@@ -186,8 +185,8 @@ LOGGING = {
 }
 if DEBUG:
     MEDIA_URL='/media/'
-    STATIC_ROOT=os.path.join(os.path.dirname(BASE_DIR),'static','static-only')
+    STATIC_ROOT=os.path.join(os.path.dirname(BASE_DIR))
     MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),'static','media')
     STATICFILES_DIRS=(
-        os.path.join(os.path.dirname(BASE_DIR),'static','static'),      
+        os.path.join(os.path.dirname(BASE_DIR),'static'),      
     )
