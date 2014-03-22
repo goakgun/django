@@ -2,6 +2,8 @@
 #Build path
 from .email_info import *
 import os
+import database_conf as DATABASE_CONF
+
 BASE_DIR=os.path.dirname(os.path.dirname(__file__))
 
 DEFAULT_FROM_EMAIL = DEFAULT_FROM_EMAIL 
@@ -57,9 +59,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'wn',  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'root',
-        'PASSWORD': '070401013',
-        'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'USER': DATABASE_CONF.database_user,
+        'PASSWORD': DATABASE_CONF.database_password,
+        'HOST': DATABASE_CONF.database_host,                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
 }
