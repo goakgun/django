@@ -32,15 +32,28 @@
     {% block navbar %}
     {% endblock %}
     
-    {% block combotron %}    
-    <!-- theme here --> 
-    {% endblock %}
-    {% block content %}
-    <!-- content here -->
+    {% block combotron %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class='col-sm-6'>
+        <h1>Hello, world!</h1>
+        <p>Whats Next Bro..</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        </div>
+        <!--<div class='col-sm-6'><iframe width="420" height="315" src="//www.youtube.com/embed/vERmKn66Y4o" frameborder="0" allowfullscreen></iframe></div>-->
+      </div>
+    </div>
     {% endblock %}
   
     {% block footer %}
-    <!-- footer here --> 
+    <div id="footer" class="container">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="navbar-inner navbar-content-center">
+                <p class="text-muted credit">whats next <a href="http://www.google.com">Gokhan Akgun</a> and <a href="https://www.google.com">M Sertac Turkel</a>.</p>
+             </div>
+        </nav>
+    </div>
     {% endblock %}
 
     <!-- Bootstrap core JavaScript
