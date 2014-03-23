@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-sm-12" style="text-align: center">
+<h1>Thank you for joining</h1>
+<div class="panel panel-info" style="width:500px">
+          <div class="panel-body">
+               <h4>Join Now!!!</h4>
+   
+           <form method='POST' action='/user/login/'>{%csrf_token%}
+               {{form.as_p}}
+           <button type="submit" class="btn btn-success">Sign Up Just Free</button>
+           </form>
+          </div>
+    </div>
+</div>
+{% endblock %}
